@@ -8,10 +8,44 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  /*background-color: #222;*/
+  background-image: url("./pics/DSCN0030.JPG");
+  background-size: 1280px 680px;
+  background-repeat: no-repeat;
+  height: 680px;
   padding: 20px;
-  color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transparent-header{
+  height: 50%;
+  width: 50%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  margin-bottom: 10%;
+  transition: letter-spacing 0.5s;
+}
+
+.transparent-header:hover{
+  opacity: 0.75;
+  letter-spacing: 2px;
+}
+
+.transparent-header h2{
+  font-family: 'Quicksand', sans-serif;
+}
+
+#watercolor-svg{
+  width: 25%;
+  height: auto;
+  opacity: 1;
 }
 
 .App-intro {
