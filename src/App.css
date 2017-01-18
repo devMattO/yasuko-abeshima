@@ -62,6 +62,9 @@
 .App-intro {
   width: 50%;
   font-family: 'Quicksand', sans-serif;
+  text-align: left;
+  line-height: 20px;
+  margin-bottom: 0px;
 }
 
 @keyframes App-logo-spin {
