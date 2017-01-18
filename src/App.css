@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -33,13 +36,13 @@
   transition: letter-spacing 0.5s;
 }
 
+.transparent-header h2{
+  font-family: 'Quicksand', sans-serif;
+}
+
 .transparent-header:hover{
   opacity: 0.75;
   letter-spacing: 2px;
-}
-
-.transparent-header h2{
-  font-family: 'Quicksand', sans-serif;
 }
 
 #watercolor-svg{
@@ -48,8 +51,17 @@
   opacity: 1;
 }
 
+.intro-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
 .App-intro {
-  font-size: large;
+  width: 50%;
+  font-family: 'Quicksand', sans-serif;
 }
 
 @keyframes App-logo-spin {
