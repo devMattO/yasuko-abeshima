@@ -1,3 +1,8 @@
+body{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -21,6 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  filter:saturate(1.5);
 }
 
 .transparent-header{
@@ -31,18 +37,38 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0.9;
+  opacity: 0.75;
   margin-bottom: 10%;
   transition: letter-spacing 0.5s;
 }
 
-.transparent-header h2{
+.transparent-header h1{
   font-family: 'Quicksand', sans-serif;
+  margin-bottom: 30px;
 }
 
 .transparent-header:hover{
-  opacity: 0.75;
+  opacity: 0.9;
   letter-spacing: 2px;
+}
+
+.nav-menu{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0px;
+}
+
+.nav-element{
+  transition: letter-spacing 0.5s;
+  width: 50%;
+}
+
+.nav-element:hover{
+  letter-spacing: 2px;
+  cursor: pointer;
 }
 
 #watercolor-svg{
