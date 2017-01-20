@@ -18,7 +18,7 @@ body{
 .App-header {
   /*background-color: #222;*/
   background-image: url("./pics/DSCN0030.JPG");
-  background-size: 1280px 680px;
+  background-size: 100% 680px;
   background-repeat: no-repeat;
   height: 680px;
   padding: 20px;
@@ -69,6 +69,11 @@ body{
 .nav-element:hover{
   letter-spacing: 2px;
   cursor: pointer;
+}
+
+.menu-item{
+  text-decoration: none;
+  color: black;
 }
 
 #watercolor-svg{
