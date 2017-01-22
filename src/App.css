@@ -86,16 +86,66 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 55%;
+  background-color: antiquewhite;
   flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  opacity: .9;
+  font-size: 18px;
 }
 
 .App-intro {
-  width: 50%;
+  width: 75%;
   font-family: 'Quicksand', sans-serif;
   text-align: left;
   line-height: 20px;
   margin-bottom: 0px;
+}
+
+.nav-bar{
+  height: 60px;
+  width: 60px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 0px 0px 5px;
+  font-family: 'Quicksand', sans-serif;
+  opacity: 0.9;
+}
+
+.nav-bar:hover{
+  opacity: 1.0;
+  cursor: pointer;
+}
+
+.about-container{
+  height: 765px;
+  width: 100%;
+  display: flex;
+  background-image: url('./pics/good-one.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 755px;
+  filter:saturate(1.5);
+}
+
+.about-pic{
+  display: flex;
+  width: 100%;
+}
+
+.about-img-el{
+  display: flex;
+  width: 100%;
+}
+
+.about-content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 @keyframes App-logo-spin {
