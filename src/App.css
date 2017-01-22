@@ -95,6 +95,10 @@ body{
   font-size: 18px;
 }
 
+.intro-container:hover{
+  opacity: 1.0;
+}
+
 .App-intro {
   width: 75%;
   font-family: 'Quicksand', sans-serif;
