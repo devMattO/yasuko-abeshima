@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router'
+import Radium from 'radium'
+
+let RadiumLink = Radium(Link)
 
 class About extends Component {
   render() {
@@ -6,8 +10,18 @@ class About extends Component {
       <div className="about-container">
         <div className="about-pic">
           <div className="about-content">
-            <div className="nav-bar">Home</div>
-            <div className="nav-bar">Gallery</div>
+            <div className="nav-bar-container">
+              <RadiumLink className="nav-menu-item" to="/">
+                <div className="nav-bar">
+                  Home
+                </div>
+              </RadiumLink>
+              <RadiumLink className="nav-menu-item" to="/gallery">
+                <div className="nav-bar">
+                  Gallery
+                </div>
+              </RadiumLink>
+            </div>
             <div className="intro-container">
               <p className="App-intro">
                 Born in Japan, Yasuko Abeshima started her art training in drawing and oil painting in middle school, continued it in high school, and at Gakushuin University in Tokyo and at the University of Wyoming.

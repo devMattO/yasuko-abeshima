@@ -18,9 +18,9 @@ body{
 .App-header {
   /*background-color: #222;*/
   background-image: url("./pics/DSCN0030.JPG");
-  background-size: 100% 680px;
+  background-size: 100% 750px;
   background-repeat: no-repeat;
-  height: 680px;
+  height: 710px;
   padding: 20px;
   color: black;
   display: flex;
@@ -103,6 +103,10 @@ body{
   margin-bottom: 0px;
 }
 
+.nav-bar-container{
+  margin-bottom: 527px;
+}
+
 .nav-bar{
   height: 60px;
   width: 60px;
@@ -113,11 +117,17 @@ body{
   border-radius: 5px 0px 0px 5px;
   font-family: 'Quicksand', sans-serif;
   opacity: 0.9;
+  text-decoration: none;
 }
 
 .nav-bar:hover{
   opacity: 1.0;
   cursor: pointer;
+}
+
+.nav-menu-item{
+  text-decoration: none;
+  color: black;
 }
 
 .about-container{
