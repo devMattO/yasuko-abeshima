@@ -86,9 +86,10 @@
 @media only screen and (max-width: 474px){
   .intro-container{
     width: 75%;
+    opacity: 1;
   }
   .about-container {
-      height: initial;
+    height: initial;
   }
   .about-content{
     flex-flow: column;
@@ -98,5 +99,16 @@
     margin-bottom: 0px;
     width: 75%;
     justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .nav-menu-item{
+    width: 50%;
+  }
+
+  .nav-bar{
+    width: 100%;
+    border-radius: initial;
   }
 }
