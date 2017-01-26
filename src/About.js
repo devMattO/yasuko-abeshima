@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 import Radium from 'radium'
+import './About.css';
 
 let RadiumLink = Radium(Link)
 
@@ -23,6 +24,7 @@ class About extends Component {
               </RadiumLink>
             </div>
             <div className="intro-container">
+              <h2 className="about-header">About</h2>
               <p className="App-intro">
                 Born in Japan, Yasuko Abeshima started her art training in drawing and oil painting in middle school, continued it in high school, and at Gakushuin University in Tokyo and at the University of Wyoming.
               </p>
