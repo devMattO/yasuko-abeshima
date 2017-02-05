@@ -27,12 +27,11 @@
 }
 
 .about-container{
-  height: 765px;
   width: 100%;
   display: flex;
   background-image: url('./pics/good-one.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 755px;
+  background-size: 100% 100%;
   filter:saturate(1.5);
 }
 
@@ -83,13 +82,19 @@
   margin-bottom: 0px;
 }
 
+@media only screen and (max-width: 900px){
+  .intro-container{
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 474px){
   .intro-container{
     width: 75%;
     opacity: 1;
   }
   .about-container {
-    height: initial;
+
   }
   .about-content{
     flex-flow: column;

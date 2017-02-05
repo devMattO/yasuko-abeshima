@@ -1,0 +1,29 @@
+body{
+  background-image: url('./pics/greyfloral.png');
+}
+
+.gallery-page{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gallery-container{
+  background-color: white;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.grid-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-grid{
+  width: 90%;
+}
