@@ -2,15 +2,29 @@ import React, { Component } from 'react';
 import { ReactRpg } from 'react-rpg';
 
 const previewStyles = {
+  display: 'flex',
+  flexFlow: 'row wrap',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   position: 'fixed',
-  border: 'solid #ffffff 10px',
   zIndex: '3',
 };
 
-const ImagePreview = ({ url }) => <img src={url} style={previewStyles} alt={url} width="50%" height="auto" />;
+const previewStyles2 = {
+  height: '30px',
+  width: '30px',
+  zIndex: '4',
+};
+
+const previewStyles3 = {
+  border: 'solid #ffffff 10px',
+};
+
+const ImagePreview = ({ url }) => <div className="preview-container" style={previewStyles} >
+                                    <button style={previewStyles2} onClick={()=>{this.setState({ popUp: false })}}>X</button>
+                                    <img style={previewStyles3} src={url} alt={url} width="auto" height="600px" />
+                                  </div>;
 
 class Grid extends Component {
   constructor(props) {
@@ -26,7 +40,7 @@ class Grid extends Component {
   imagePopup(url, obj) {
       this.setState({ popUp: url });
       console.log(obj);
-      setTimeout(() => this.setState({ popUp: false }), 5000);
+      // setTimeout(() => this.setState({ popUp: false }), 5000);
   }
 
   getImages() {
@@ -86,7 +100,11 @@ class Grid extends Component {
     return (
       <div className="grid-container">
         { this.state.popUp !== false ? <ImagePreview url={this.state.popUp} /> : null }
-        <ReactRpg imagesArray={this.getImages()} columns={[ 1, 2, 3 ]} padding={10} />
+        <ReactRpg
+          imagesArray={this.getImages()}
+          columns={[ 1, 2, 4 ]}
+          padding={10}
+        />
       </div>
     );
   }
