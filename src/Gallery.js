@@ -7,7 +7,7 @@ class Gallery extends Component {
     return (
       <div className='gallery-page'>
         <div className="gallery-container">
-          <h1 className="gallery-header">Gallery</h1>
+          <h1 className="gallery-header">- Gallery -</h1>
         </div>
         <Grid />
       </div>
