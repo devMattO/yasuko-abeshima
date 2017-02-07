@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Grid from './image-grid.js'
+import ImageLightbox from './lightbox.js'
 import './Gallery.css';
 
 class Gallery extends Component {
@@ -10,6 +11,7 @@ class Gallery extends Component {
           <h1 className="gallery-header">- Gallery -</h1>
         </div>
         <Grid />
+        <ImageLightbox />
       </div>
     );
   }

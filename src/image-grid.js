@@ -22,8 +22,8 @@ const previewStyles3 = {
 };
 
 const ImagePreview = ({ url }) => <div className="preview-container" style={previewStyles} >
-                                    <button style={previewStyles2} onClick={()=>{this.setState({ popUp: false })}}>X</button>
-                                    <img style={previewStyles3} src={url} alt={url} width="auto" height="600px" />
+                                    <button style={previewStyles2} onClick={(a,b,c)=>{console.log(a,b.__proto__)}}>X</button>
+                                    <img style={previewStyles3} onClick={(e)=>{console.log(url)}} src={url} alt={url} width="auto" height="600px" />
                                   </div>;
 
 class Grid extends Component {
@@ -37,6 +37,10 @@ class Grid extends Component {
       };
   }
 
+  closePopup(){
+    this.setState({ popUp: false })
+  }
+
   imagePopup(url, obj) {
       this.setState({ popUp: url });
       console.log(obj);
@@ -45,7 +49,7 @@ class Grid extends Component {
 
   getImages() {
       return [
-        { url: 'https://res.cloudinary.com/devmatto/image/upload/v1486316629/sc00091094_lqgc4h.jpg', clickHandler: this.imagePopup.bind(this) },
+        { url: 'https://res.cloudinary.com/devmatto/image/upload/v1486316629/sc00091094_lqgc4h.jpg', clickHandler: ()=>{this.imagePopup.bind(this); this.closePopup.bind(this);} },
         { url: 'https://res.cloudinary.com/devmatto/image/upload/v1486316629/sc00089185_ynvbjm.jpg', clickHandler: this.imagePopup.bind(this) },
         { url: 'https://res.cloudinary.com/devmatto/image/upload/v1486316628/sc00082583_uh4ggy.jpg', clickHandler: this.imagePopup.bind(this) },
         { url: 'https://res.cloudinary.com/devmatto/image/upload/v1486316628/sc00068474_nlshcl.jpg', clickHandler: this.imagePopup.bind(this) },
@@ -99,7 +103,7 @@ class Grid extends Component {
   render() {
     return (
       <div className="grid-container">
-        { this.state.popUp !== false ? <ImagePreview url={this.state.popUp} /> : null }
+        { this.state.popUp !== false ? <ImagePreview url={this.state.popUp} /> : <div></div> }
         <ReactRpg
           imagesArray={this.getImages()}
           columns={[ 1, 2, 4 ]}
