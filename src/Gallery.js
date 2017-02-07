@@ -10,7 +10,6 @@ class Gallery extends Component {
         <div className="gallery-container">
           <h1 className="gallery-header">- Gallery -</h1>
         </div>
-        <Grid />
         <ImageLightbox />
       </div>
     );

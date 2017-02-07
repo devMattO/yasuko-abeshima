@@ -49,7 +49,7 @@ class Grid extends Component {
 
   getImages() {
       return [
-        { url: 'https://res.cloudinary.com/devmatto/image/upload/v1486316629/sc00091094_lqgc4h.jpg', clickHandler: ()=>{this.imagePopup.bind(this); this.closePopup.bind(this);} },
+        { url: 'https://res.cloudinary.com/devmatto/image/upload/v1486316629/sc00091094_lqgc4h.jpg', clickHandler: this.imagePopup.bind(this) },
         { url: 'https://res.cloudinary.com/devmatto/image/upload/v1486316629/sc00089185_ynvbjm.jpg', clickHandler: this.imagePopup.bind(this) },
         { url: 'https://res.cloudinary.com/devmatto/image/upload/v1486316628/sc00082583_uh4ggy.jpg', clickHandler: this.imagePopup.bind(this) },
         { url: 'https://res.cloudinary.com/devmatto/image/upload/v1486316628/sc00068474_nlshcl.jpg', clickHandler: this.imagePopup.bind(this) },
