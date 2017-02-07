@@ -2,29 +2,20 @@ import React, { Component } from 'react';
 import Gallery from 'react-photo-gallery';
 
 
-
-
-
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// https://res.cloudinary.com/devmatto/image/upload/v1486316619/sc0008e83b_tv1z4n.jpg
-// https://res.cloudinary.com/devmatto/image/upload/v1486316619/sc0005bbac_lffxv3.jpg
-// https://res.cloudinary.com/devmatto/image/upload/v1486316618/sc0001f4d6_pmglud.jpg
-// https://res.cloudinary.com/devmatto/image/upload/v1486316618/sc0001cba3_deqv0i.jpg
-// https://res.cloudinary.com/devmatto/image/upload/v1486316617/sc0001dd45_jhrjhg.jpg
-// https://res.cloudinary.com/devmatto/image/upload/v1486316616/sc0001c6f5_xtqqvj.jpg
-// https://res.cloudinary.com/devmatto/image/upload/v1486316615/sc0001ecbe_d02jiw.jpg
-// https://res.cloudinary.com/devmatto/image/upload/v1486316615/sc0001b022_d7nhab.jpg
-// https://res.cloudinary.com/devmatto/image/upload/v1486316613/sc0000da1d_zebdfb.jpg
-// https://res.cloudinary.com/devmatto/image/upload/v1486316613/sc0000e247_zy9fof.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316612/DSCN0003_jnuc3p.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316611/sc000c40f3_hn5k9x.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316610/sc000c1d7a_pisxm4.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316609/sc000b87f1_ha3edc.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316608/sc000b6d00_a2zmhm.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316607/sc000a02b1_bp5rvf.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316606/sc0000aea5_m3tgui.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316606/sc000af309_wv9oqk.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316604/DSC00080_t15hcb.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316603/DSC00044_ujmiww.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316603/DSC00053_x9w3dr.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316603/DSC00036_dgirxn.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316603/DSC00043_bhzkiu.jpg
+// https://res.cloudinary.com/devmatto/image/upload/v1486316603/DSC00017_inxt6g.jpg
 
 
 const PHOTO_SET = [
@@ -50,7 +41,7 @@ const PHOTO_SET = [
     src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316628/sc00082583_uh4ggy.jpg',
     width: 681,
     height: 1024,
-    aspectRatio: 1.5,
+    aspectRatio: 1.4,
     lightboxImage:{
     src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316628/sc00082583_uh4ggy.jpg',
     }
@@ -77,7 +68,7 @@ const PHOTO_SET = [
     src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316627/sc0009555c_leodte.jpg',
     width: 600,
     height: 1024,
-    aspectRatio: 1.4,
+    aspectRatio: 1.5,
     lightboxImage:{
     src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316627/sc0009555c_leodte.jpg',
     }
@@ -104,7 +95,7 @@ const PHOTO_SET = [
     src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316627/sc000941a5_mfdv9c.jpg',
     width: 600,
     height: 600,
-    aspectRatio: 1.4,
+    aspectRatio: 1.5,
     lightboxImage:{
     src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316627/sc000941a5_mfdv9c.jpg',
     }
@@ -245,21 +236,93 @@ const PHOTO_SET = [
     }
   },
   {
-    src: '',
-    width: 600,
-    height: 600,
-    aspectRatio: 1,
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316619/sc0008e83b_tv1z4n.jpg',
+    width: 681,
+    height: 1024,
+    aspectRatio: .7,
     lightboxImage:{
-    src: '',
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316619/sc0008e83b_tv1z4n.jpg',
     }
   },
   {
-    src: '',
-    width: 600,
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316619/sc0005bbac_lffxv3.jpg',
+    width: 900,
     height: 600,
-    aspectRatio: 1,
+    aspectRatio: 1.3,
     lightboxImage:{
-    src: '',
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316619/sc0005bbac_lffxv3.jpg',
+    }
+  },
+  {
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316618/sc0001f4d6_pmglud.jpg',
+    width: 900,
+    height: 600,
+    aspectRatio: 1.5,
+    lightboxImage:{
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316618/sc0001f4d6_pmglud.jpg',
+    }
+  },
+  {
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316618/sc0001cba3_deqv0i.jpg',
+    width: 681,
+    height: 1024,
+    aspectRatio: .7,
+    lightboxImage:{
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316618/sc0001cba3_deqv0i.jpg',
+    }
+  },
+  {
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316617/sc0001dd45_jhrjhg.jpg',
+    width: 1024,
+    height: 681,
+    aspectRatio: 1.5,
+    lightboxImage:{
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316617/sc0001dd45_jhrjhg.jpg',
+    }
+  },
+  {
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316616/sc0001c6f5_xtqqvj.jpg',
+    width: 681,
+    height: 1024,
+    aspectRatio: .7,
+    lightboxImage:{
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316616/sc0001c6f5_xtqqvj.jpg',
+    }
+  },
+  {
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316615/sc0001ecbe_d02jiw.jpg',
+    width: 900,
+    height: 600,
+    aspectRatio: 1.5,
+    lightboxImage:{
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316615/sc0001ecbe_d02jiw.jpg',
+    }
+  },
+  {
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316615/sc0001b022_d7nhab.jpg',
+    width: 900,
+    height: 600,
+    aspectRatio: 1.5,
+    lightboxImage:{
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316615/sc0001b022_d7nhab.jpg',
+    }
+  },
+  {
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316613/sc0000da1d_zebdfb.jpg',
+    width: 900,
+    height: 600,
+    aspectRatio: 1.5,
+    lightboxImage:{
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316613/sc0000da1d_zebdfb.jpg',
+    }
+  },
+  {
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316613/sc0000e247_zy9fof.jpg',
+    width: 900,
+    height: 600,
+    aspectRatio: 1.3,
+    lightboxImage:{
+    src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316613/sc0000e247_zy9fof.jpg',
     }
   },
 

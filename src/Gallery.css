@@ -60,8 +60,10 @@ a img:hover{
   transform: scale(1.025);
 }*/
 
+/* vvvvvvv All but the hovered element is opacity:.75 */
+
 #Gallery:hover > div{
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
 #Gallery:hover > div:hover {
