@@ -1,5 +1,5 @@
 
-const getPhotoSet = () => {
+const getPhotoSet = _ => {
   return [
     {
       src: 'https://res.cloudinary.com/devmatto/image/upload/v1486316629/sc00091094_lqgc4h.jpg',
