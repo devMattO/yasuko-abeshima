@@ -1,6 +1,3 @@
-body{
-  background-color: antiquewhite;
-}
 
 .App {
   text-align: center;
@@ -15,7 +12,7 @@ body{
 }
 
 .App-header {
-  /*background-color: #222;*/
+  background-color: indianred;
   background-image: url("./pics/DSCN0030.JPG");
   background-size: 100% 750px;
   background-repeat: no-repeat;
@@ -43,7 +40,7 @@ body{
 
 .transparent-header h1{
   font-family: 'Quicksand', sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .transparent-header:hover{
@@ -72,6 +69,11 @@ body{
 .menu-item{
   text-decoration: none;
   color: black;
+  font-size: 1.4em;
+}
+
+.menu-item:hover{
+  color: indianred;
 }
 
 #watercolor-svg{
@@ -83,6 +85,24 @@ body{
 @media only screen and (max-width: 900px){
   .transparent-header{
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: 736px){
+  body{
+    background-color: indianred;
+  }
+
+  .App-header{
+    background-image: none;
+  }
+
+  .transparent-header h1{
+    margin-bottom: 45px;
+  }
+
+  #watercolor-svg{
+    width: 40%;
   }
 }
 
