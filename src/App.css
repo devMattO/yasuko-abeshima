@@ -1,3 +1,6 @@
+body{
+  background-color: antiquewhite;
+}
 
 .App {
   text-align: center;
@@ -84,7 +87,7 @@
 
 @media only screen and (max-width: 900px){
   .transparent-header{
-    width: 80%;
+    width: 95%;
   }
 }
 

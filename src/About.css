@@ -64,7 +64,7 @@
   width: 55%;
   background-color: antiquewhite;
   flex-direction: column;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   padding-bottom: 30px;
   opacity: .9;
   font-size: 18px;
@@ -76,7 +76,7 @@
 }
 
 .App-intro {
-  width: 75%;
+  width: 100%;
   font-family: 'Quicksand', sans-serif;
   text-align: left;
   line-height: 20px;
